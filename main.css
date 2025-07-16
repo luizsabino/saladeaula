@@ -14,20 +14,24 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-
 .icone {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 0.5rem;
-
+  display: flex;
+  flex-direction: column; /* Isso faz a legenda ficar abaixo */
+  align-items: center;
+  text-align: center;
+  margin: 0.2rem;
+  width: 100px; /* opcional, para alinhar os blocos */
 }
 
 .icone img {
-    height: 1.5em;
-    /* altura do texto */
-    width: auto;
-    /* mantém proporção */
-    display: inline;
+  height: 3em;
+  width: auto;
+}
+
+.icone span {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: #036ae0;
 }
 
 /* Abas */
@@ -81,9 +85,10 @@ h1 {
 
 /* Cards */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .card {
@@ -92,6 +97,12 @@ h1 {
     padding: 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    width: 48%;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .card:hover {
@@ -100,12 +111,49 @@ h1 {
 
 .card h3 {
     margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 8px solid #EEEEEE;
 }
 
 .card-icon{
-    width: 12%;
+    width: 12rem;
+    height: auto;
 }
 
 .card-body{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
+
+.card-text{
+    width: 75%;
+}
+
+.card-footer{
+    display: flex;
+    border-top: 8px solid #EEEEEE;
+}
+
+a {
+  color: #4a90e2;       /* ou a cor que você quiser */
+  text-decoration: none; /* opcional: remove sublinhado */
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+
+}
+
+/* força a cor mesmo em outros estados */
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: #4a90e2;       /* mesma cor do link normal */
+  text-decoration: none; /* mantém o estilo uniforme */
+}
+
+
+
+
