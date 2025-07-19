@@ -11,17 +11,18 @@
 
 <body>
     <div class="container">
-        <h1><span class="icone"><img src="./img/technical-support.png" alt="ícone de suporte"></span>
+        <h1><span class="logo"><img src="./img/technical-support.png" alt="ícone de suporte"></span>
             Recursos para salas de aula</h1>
         <!-- Abas -->
         <div class="tab-bar">
-            <button class="tab-button active" onclick="openTab(event, 'inicio')">Início</button>
-            <button class="tab-button" onclick="openTab(event, 'projetos')">Projetos</button>
+            <button class="tab-button active" onclick="openTab(event, 'saladeaula')">Sala de Aula</button>
+            <button class="tab-button" onclick="openTab(event, 'mais')">Mais Recursos</button>
+            <button class="tab-button" onclick="openTab(event, 'guia')">Guia</button>
             <button class="tab-button" onclick="openTab(event, 'sobre')">Sobre</button>
         </div>
 
         <!-- Conteúdo Início -->
-        <div id="inicio" class="tab-content active">
+        <div id="saladeaula" class="tab-content active">
             <div class="cards">
                 <div class="card">
                     <h3>Bem-vindo</h3>
@@ -65,24 +66,19 @@
 
                 <!-- Card: Vídeos e Apresentações -->
                 <div class="card">
-                    <h3>🤖 Inteligência Artificial</h3>
+                    <h3>🔲 Quadro Branco</h3>
                     <div class="card-body">
-                        <a href="https://chatgpt.com/" target="_blank" class="icone">
-                            <img src="https://chat.openai.com/favicon.ico" alt="Chatgpt">
-                            <span>ChatGPT</span>
+                        <a href="https://www.figma.com/jam" target="_blank" class="icone">
+                            <img src="https://static.figma.com/app/icon/1/favicon.png" alt="figma">
+                            <span>Figma | FigJam</span>
                         </a>
-                        <a href="https://chat.deepseek.com/" target="_blank" class="icone">
-                            <img src="https://www.deepseek.com/favicon.ico" alt="DeepSeek">
-                            <span>DeepSeek</span>
+                        <a href="https://www.canva.com/online-whiteboard" target="_blank" class="icone">
+                            <img src="https://static.canva.com/static/images/favicon-1.ico" alt="Canva">
+                            <span>Canva Whiteboard</span>
                         </a>
-                        <a href="https://copilot.microsoft.com/chats" target="_blank" class="icone">
-                            <img src="https://copilot.microsoft.com/sa/simg/favicon-cplt.ico" alt="Copilot">
-                            <span>Copilot</span>
-                        </a>
-                        <a href="https://gemini.google.com/app" target="_blank" class="icone">
-                            <img src="https://www.gstatic.com/lamda/images/gemini_aurora_icon_4g_53fff55fa07630c47cc6c.svg"
-                                alt="Copilot">
-                            <span>Gemini</span>
+                        <a href="https://sketchpad.app/pt/" target="_blank" class="icone">
+                            <img src="https://sketchpad.app/media/favicons/favicon-48x48.png" alt="Sketchpad">
+                            <span>Sketchpad</span>
                         </a>
                     </div>
                 </div>
@@ -113,8 +109,45 @@
                     </div>
                 </div>
 
+                <!-- Card: Vídeos e Apresentações -->
                 <div class="card">
-                    <h3>FigJam | Figma</h3>
+                    <h3>🤖 Inteligência Artificial</h3>
+                    <div class="card-body">
+                        <a href="https://chatgpt.com/" target="_blank" class="icone">
+                            <img src="https://chat.openai.com/favicon.ico" alt="Chatgpt">
+                            <span>ChatGPT</span>
+                        </a>
+                        <a href="https://chat.deepseek.com/" target="_blank" class="icone">
+                            <img src="https://www.deepseek.com/favicon.ico" alt="DeepSeek">
+                            <span>DeepSeek</span>
+                        </a>
+                        <a href="https://copilot.microsoft.com/chats" target="_blank" class="icone">
+                            <img src="https://copilot.microsoft.com/sa/simg/favicon-cplt.ico" alt="Copilot">
+                            <span>Copilot</span>
+                        </a>
+                        <a href="https://gemini.google.com/app" target="_blank" class="icone">
+                            <img src="https://www.gstatic.com/lamda/images/gemini_aurora_icon_4g_53fff55fa07630c47cc6c.svg"
+                                alt="Copilot">
+                            <span>Gemini</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Conteúdo Projetos -->
+        <div id="mais" class="tab-content">
+            <div class="cards">
+
+                <div class="card">
+                    <h3>
+                        <span class="logo">
+                            <img src="https://static.figma.com/app/icon/1/favicon.png" alt="FigJam">
+                        </span>Figma | FigJam
+                    </h3>
                     <div class="card-body">
                         <div class="card-text">
                             <p>O FigJam é uma ferramenta digital de quadro branco colaborativo que pode ser usada para
@@ -125,9 +158,10 @@
                                 para atividades como brainstorms, resumos visuais, organização de conteúdos e debates.
                             </p>
                         </div>
-                        <a href="https://www.figma.com/jam" target="_blank" class="icone">
-                            <img src="https://static.figma.com/app/icon/1/favicon.png" alt="FigJam">
-                            <span>Figma | FigJam</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.figma.com/jam" target="_blank" class="">
+                            <p>Figma | FigJam</p>
                         </a>
                     </div>
                 </div>
@@ -151,7 +185,6 @@
                             <span>Canva sWhiteboard</span>
                         </a>
                     </div>
-
                 </div>
 
                 <div class="card">
@@ -168,16 +201,6 @@
                             <span>Sketchpad</span>
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Conteúdo Projetos -->
-        <div id="projetos" class="tab-content">
-            <div class="cards">
-                <div class="card">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do projeto 1.</p>
                 </div>
                 <!-- Card: Atividades e Jogos -->
                 <div class="card">
@@ -205,6 +228,20 @@
             </div>
         </div>
 
+        <div class="tab-content" id="guia">
+            <div class="cards">
+                <div class="card">
+                    <h3>EMEF Benta Maria Ragassi Scutti - CAIC</h3>
+                    <p>Av. Brasil, 1500 - Vila Cardim IV<br> CEP: 15.997-312 Telefone: (16) 3383-7400</p>
+                </div>
+                <div class="card">
+                    <h3>Sobre esta página</h3>
+                    <p>Esta curadoria foi desenvolvida por Luiz Fernando Sabino</p>
+                    <p>E-mail: sabino.luiz@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Conteúdo Sobre -->
         <div id="sobre" class="tab-content">
             <div class="cards">
@@ -213,7 +250,7 @@
                     <p>Av. Brasil, 1500 - Vila Cardim IV<br> CEP: 15.997-312 Telefone: (16) 3383-7400</p>
                 </div>
                 <div class="card">
-                    <h3>Sobre mim</h3>
+                    <h3>Sobre esta página</h3>
                     <p>Esta curadoria foi desenvolvida por Luiz Fernando Sabino</p>
                     <p>E-mail: sabino.luiz@gmail.com</p>
                 </div>

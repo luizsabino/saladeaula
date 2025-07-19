@@ -10,10 +10,18 @@ body {
     background: var(--cor-fundo);
 }
 
-h1 {
+h1, h3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
+.logo img {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
 .icone {
   display: flex;
   flex-direction: column; /* Isso faz a legenda ficar abaixo */
@@ -42,12 +50,13 @@ h1 {
 
 .tab-button {
     flex: 1;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     cursor: pointer;
     background-color: var(--cor-primaria);
     color: white;
     border: none;
+    border-radius: 8px;
     outline: none;
     transition: background-color 0.3s;
 }
@@ -58,6 +67,8 @@ h1 {
 
 .tab-button.active {
     background-color: #2c6fb3;
+    font-size: larger;
+    font-weight: 500;
 }
 
 /* Conteúdo das abas */
@@ -128,12 +139,13 @@ h1 {
 }
 
 .card-text{
-    width: 75%;
+    width: auto;
 }
 
 .card-footer{
     display: flex;
     border-top: 8px solid #EEEEEE;
+    width: auto;
 }
 
 a {
