@@ -26,8 +26,7 @@
                 <span>Menu</span>
             </button>
             <span class="navbar-brand mx-auto d-flex align-items-center gap-2">
-                <img src="img/responsive.png" alt="" width="32" height="32">
-                <span>Recursos para Sala de Aula</span>
+
             </span>
             <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
@@ -47,10 +46,10 @@
                             <a class="nav-link" href="quadrobranco.html">Quadro Branco</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pesquisa e Navegação</a>
+                            <a class="nav-link" href="ferramentas.html">Ferramentas de Produtividade</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ferramentas Google</a>
+                            <a class="nav-link" href="google.html">Ferramentas Google</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Inteligência Artificial</a>
@@ -65,21 +64,38 @@
             </div>
         </div>
     </nav>
-    <!-- CONTAINER -->
-    <div class="container">
-        
-        <div class="cards">
-            <div class="card w-50 ">
-            <div class="card-title">
-                <h3>Bem-vindo</h3>
 
+    <!-- CONTAINER -->
+    <div class="container text-center">
+        <div class="card mx-auto" style="width:80%">
+            <div class="card-title text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="img/responsive.png" alt="" width="32" height="32" class="me-2">
+                    <h2 class="mb-0">Sala de Aula</h2>
+                </div>
+
+                <h4 class="mt-2">Bem-vindo</h4>
             </div>
             <div class="card-body">
-                <p>Nesta página você encontrará alguns recursos que podem ser úteis no dia a dia da sala de aula ao
-                    usar a projeção de tela.</p>
+                <p>Nesta página, você encontrará alguns recursos úteis para o dia a dia da sala de aula com projeção de
+                    tela.</p>
             </div>
             <div class="card-footer">Luiz Fernando Sabino</div>
         </div>
+        
+        <h4 id="data-hoje" class="mt-5 text-primary"></h4>
+
+        <div class="cards mx-auto" style="width:80%">
+            <div class="cardGrande align-items-center">
+                <iframe src="https://relogio.ntp.br/horacerta/glight.php" frameborder="0" scrolling="no" height="247"
+                    width="365" marginheight="0px" allowtransparency="true"></iframe>
+            </div>
+
+            <div class="cardGrande justify-content-center">
+                <a class="weatherwidget-io" href="https://forecast7.com/pt/n21d60n48d36/matao/" data-label_1="MATÃO"
+                    data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast"
+                    data-days="3" data-theme="weather_one">MATÃO(SP) </a>
+            </div>
         </div>
 
     </div>
@@ -91,6 +107,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
+    <script src="https://cdn.logwork.com/widget/text.js"></script>
+    <script src="index.js"></script>
 
 
 </body>
