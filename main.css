@@ -86,11 +86,11 @@ body {
 
 
 @media (max-width: 768px) {
-  .cards {
+  .cards, {
     margin-top: 2rem;
   }
 
-  .cards .card {
+  .cards .card, .cardGrande {
     width: 100%;
   }
 
