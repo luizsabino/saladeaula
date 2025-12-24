@@ -1,4 +1,4 @@
-<!-- index.html -->
+<!-- matematica.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -71,14 +71,94 @@
             <h3 class="border-bottom border-5 pb-2">Matemática e Ciências</h3>
         </div>
         <div class="cards ">
-            <div class="cardGrande">
+            <!-- CARD 1: Math Apps -->
+            <div class="card">
                 <div class="card-body">
                     <a href="https://www.mathlearningcenter.org/apps" target="_blank" class="icone">
-                        <img src="./img/mathapps.svg" alt="figma" style="height: 3rem;">
+                        <img src="./img/mathapps.svg" alt="figma">
                         <span>
                             <h5>Math Apps</h5>
                         </span>
                     </a>
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalMathApps">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 2: Khan Academy -->
+            <div class="card">
+                <div class="card-body">
+                    <a href="https://pt.khanacademy.org/" target="_blank" class="icone">
+                        <img src="./img/Khan_Academy_logo_(2018).svg" alt="Canva">
+                        <span>
+                            <h5></h5>
+                        </span>
+                    </a>
+
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalKhanAcademy">
+                        <i class="bi bi-plus-circle "></i>+
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 3: Polypad -->
+            <div class="card">
+                <div class="card-body">
+                    <a href="https://polypad.amplify.com/pt/" target="_blank" class="icone">
+                        <img src="./img/polypad.svg" alt="Polypad" style="height: 3rem;">
+                        <span>Polypad</span>
+                    </a>
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalPolypad">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 4: Tinkercad -->
+            <div class="card">
+                <div class="card-body">
+                    <a href="https://www.tinkercad.com/" target="_blank" class="icone">
+                        <img src="./img/tinkercad_ok.svg" alt="Tinkercad" style="height: 4rem;">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalTinkercad">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- MODAIS DO BOOTSTRAP -->
+
+    <!-- Modal Math Apps -->
+    <div class="modal modal-lg fade" id="modalMathApps" tabindex="-1" aria-labelledby="modalMathAppsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMathAppsLabel">Math Apps - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>Fractions – exploração visual de frações, equivalência, comparação e operações.</li>
                         <li>Geoboard – criação de formas geométricas usando elásticos virtuais.</li>
@@ -96,18 +176,27 @@
                         <li>Whiteboard App – quadro branco digital para desenho, escrita e explicações.</li>
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="cardGrande">
-                <div class="card-body">
-                    <a href="https://pt.khanacademy.org/" target="_blank" class="icone">
-                        <img src="./img/Khan_Academy_logo_(2018).svg" alt="Canva">
-                        <span></span>
-                    </a>
+    <!-- Modal Khan Academy -->
+    <div class="modal modal-lg fade" id="modalKhanAcademy" tabindex="-1" aria-labelledby="modalKhanAcademyLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalKhanAcademyLabel">Khan Academy - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>
                             Matemática – conteúdos de números, operações, frações, equações, funções, geometria,
-                            estatística e probabilidade, com progressão do básico ao avançado.
+                            estatística e probabilidade, com todo conteúdo alinhado à BNCC.
                         </li>
                         <li>
                             Física – estudos sobre movimento, força, energia, trabalho, leis de Newton,
@@ -130,7 +219,7 @@
                             poupança e tomada de decisão.
                         </li>
                         <li>
-                            História – história geral e história do mundo, com foco em processos históricos,
+                            História – história geral com foco em processos históricos,
                             análise de fontes e contexto social.
                         </li>
 
@@ -139,8 +228,8 @@
                             e exemplos passo a passo.
                         </li>
                         <li>
-                            Exercícios Interativos – atividades com correção automática, dicas,
-                            feedback imediato e níveis de dificuldade.
+                            Exercícios Interativos – atividades com correção automática, dicas e
+                            feedback imediato.
                         </li>
                         <li>
                             Acompanhamento de Progresso – registro do desempenho do aluno,
@@ -152,14 +241,22 @@
                         </li>
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <a href="https://polypad.amplify.com/pt/" target="_blank" class="icone">
-                        <img src="./img/polypad.svg" alt="Polypad" style="height: 3rem;">
-                        <span>Polypad</span>
-                    </a>
+    <!-- Modal Polypad -->
+    <div class="modal modal-lg fade" id="modalPolypad" tabindex="-1" aria-labelledby="modalPolypadLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPolypadLabel">Polypad - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>Barras de frações – manipuladores visuais para representar, comparar e operar frações.</li>
                         <li>Poliedros 3D – sólidos geométricos interativos para explorar faces, arestas e vértices.</li>
@@ -174,17 +271,22 @@
                         <li>Portas lógicas – componentes para explorar lógica booleana e raciocínio computacional.</li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
-                <div class="card-body">
-                    <a href="https://sketchpad.app/pt/" target="_blank" class="icone">
-                        <img src="./img/tinkercad_ok.svg" alt="Tinkercad" style="height: 4rem;">
-                        <span></span>
-                    </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tinkercad -->
+    <div class="modal modal-lg fade" id="modalTinkercad" tabindex="-1" aria-labelledby="modalTinkercadLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTinkercadLabel">Tinkercad - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>
                             Sim Lab (Simulação Física) – ambiente que permite testar efeitos de gravidade, movimento,
@@ -205,11 +307,13 @@
 
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
-
-
         </div>
     </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

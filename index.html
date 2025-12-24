@@ -68,36 +68,41 @@
 
     <!-- CONTAINER -->
     <div class="container text-center">
-        <div class="card mx-auto" style="width:80%">
-            <div class="card-title text-center">
-                <div class="d-flex align-items-center justify-content-center">
-                    <img src="img/responsive.png" alt="" width="32" height="32" class="me-2">
-                    <h2 class="mb-0">Sala de Aula</h2>
+
+        <h2 id="data-hoje" class="text-primary"></h2>
+
+        <div class="cards mx-auto">
+            <div class="cardGrande mx-auto">
+                <div class="card-title text-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="img/responsive.png" alt="" width="32" height="32" class="me-2">
+                        <h2 class="mb-0">Sala de Aula</h2>
+                    </div>
+                    <h4 class="mt-2">Bem-vindo</h4>
                 </div>
-
-                <h4 class="mt-2">Bem-vindo</h4>
+                <div class="card-body align-items-center">
+                    <p class="w-75 text-start">Nesta página, você encontrará alguns recursos úteis para o dia a dia na
+                        sala de aula.</p>
+                </div>
+                <div class="card-footer">Luiz Fernando Sabino</div>
             </div>
-            <div class="card-body">
-                <p>Nesta página, você encontrará alguns recursos úteis para o dia a dia da sala de aula com projeção de
-                    tela.</p>
-            </div>
-            <div class="card-footer">Luiz Fernando Sabino</div>
-        </div>
-        
-        <h4 id="data-hoje" class="mt-5 text-primary"></h4>
-
-        <div class="cards mx-auto" style="width:80%">
             <div class="cardGrande align-items-center">
                 <iframe src="https://relogio.ntp.br/horacerta/glight.php" frameborder="0" scrolling="no" height="247"
                     width="365" marginheight="0px" allowtransparency="true"></iframe>
-            </div>
-
-            <div class="cardGrande justify-content-center">
-                <a class="weatherwidget-io" href="https://forecast7.com/pt/n21d60n48d36/matao/" data-label_1="MATÃO"
-                    data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast"
-                    data-days="3" data-theme="weather_one">MATÃO(SP) </a>
+                <span>Em caso de erro, atualize a página 🔄️</span>
             </div>
         </div>
+        <!-- SEÇÃO DE PREVISÃO DO TEMPO - BRASIL API -->
+        <h4 class="mt-5 text-primary">Previsão do Tempo para Matão/SP</h4>
+        <div class="cards mx-auto" style="width:80%;" id="weather-cards-container">
+            <!-- Os cards de previsão serão inseridos aqui via JavaScript -->
+        </div>
+        <a href="https://www.cptec.inpe.br/sp/matao" target="_blank" class="icone mb-5 mt-3">
+            <span>
+                <h6>Dados do CPTEC/INPE - Clique para ver mais informações</h6>
+            </span>
+        </a>
+
 
     </div>
 

@@ -20,7 +20,7 @@ body {
 }
 
 /* cada card ocupa metade da largura no desktop */
-.cards .card,.cardGrande {
+.cards .card,.cardGrande,.cardsm {
   background-color: var(--cor-card);
   border-radius: 8px;
   padding: 0.5rem;
@@ -34,6 +34,10 @@ body {
 
 .cardGrande{
   width: 49%;
+}
+
+.cardsm{
+  width: 24%;
 }
 
 .cards .card:hover {

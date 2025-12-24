@@ -51,7 +51,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="ferramentas.html">Ferramentas de Produtividade</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="ia.html">Inteligência Artificial</a>
                         </li>
@@ -71,12 +71,85 @@
             <h3 class="border-bottom border-5 pb-2">Quadro Branco</h3>
         </div>
         <div class="cards ">
-            <div class="card">
+            <div class="cardsm">
                 <div class="card-body">
                     <a href="https://www.figma.com/jam" target="_blank" class="icone">
                         <img src="https://static.figma.com/app/icon/1/favicon.png" alt="figma">
                         <span>Figma | FigJam</span>
                     </a>
+
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalFigjam">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
+
+            <div class="cardsm">
+                <div class="card-body">
+                    <a href="https://www.canva.com/online-whiteboard" target="_blank" class="icone">
+                        <img src="https://static.canva.com/static/images/favicon-1.ico" alt="Canva">
+                        <span>Canva Whiteboard</span>
+                    </a>
+
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalCanva">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
+
+            <div class="cardsm">
+                <div class="card-body">
+                    <a href="https://sketchpad.app/pt/" target="_blank" class="icone">
+                        <img src="https://sketchpad.app/media/favicons/favicon-48x48.png" alt="Sketchpad">
+                        <span>Sketchpad</span>
+                    </a>                    
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalSketchpad">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
+            <div class="cardsm">
+                <div class="card-body">
+                    <a href="https://miro.com/online-whiteboard/" target="_blank" class="icone">
+                        <img src="https://miro.com/app/static/3ffee97bab1a707b.png" alt="Miro Whiteboard">
+                        <span>Miro Whiteboard</span>
+                    </a>                    
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalMiro">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAIS DO BOOTSTRAP -->
+
+    <!-- Modal FigJam -->
+    <div class="modal fade" id="modalFigjam" tabindex="-1" aria-labelledby="modalFigjamLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFigjamLabel">FigJam - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>Quadro infinito</li>
                         <li>Notas adesivas</li>
@@ -86,14 +159,22 @@
                         <li>Reações, emotes, cursores ao vivo</li>
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <a href="https://www.canva.com/online-whiteboard" target="_blank" class="icone">
-                        <img src="https://static.canva.com/static/images/favicon-1.ico" alt="Canva">
-                        <span>Canva Whiteboard</span>
-                    </a>
+    <!-- Modal Canva -->
+    <div class="modal fade" id="modalCanva" tabindex="-1" aria-labelledby="modalCanvaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCanvaLabel">Canva Whiteboard - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>Tela expansível</li>
                         <li>Muitos templates prontos</li>
@@ -103,14 +184,22 @@
                         <li>Integração com apresentações e designs Canva</li>
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <a href="https://sketchpad.app/pt/" target="_blank" class="icone">
-                        <img src="https://sketchpad.app/media/favicons/favicon-48x48.png" alt="Sketchpad">
-                        <span>Sketchpad</span>
-                    </a>
+    <!-- Modal Sketchpad -->
+    <div class="modal fade" id="modalSketchpad" tabindex="-1" aria-labelledby="modalSketchpadLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSketchpadLabel">Sketchpad - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>Desenho livre (pincéis, canetas, formas)</li>
                         <li>Camadas</li>
@@ -120,13 +209,22 @@
                         <li>Exportar em PNG, JPG, SVG, PDF</li>
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <a href="https://miro.com/online-whiteboard/" target="_blank" class="icone">
-                        <img src="https://miro.com/app/static/3ffee97bab1a707b.png" alt="Miro Whiteboard">
-                        <span>Miro Whiteboard</span>
-                    </a>
+        </div>
+    </div>
+
+    <!-- Modal Miro Whiteboard -->
+    <div class="modal fade" id="modalMiro" tabindex="-1" aria-labelledby="modalMiroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMiroLabel">Miro Whiteboard - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <ul>
                         <li>Canvas(tela) infinito</li>
                         <li>Notas adesivas, formas, fluxogramas</li>
@@ -135,8 +233,10 @@
                         <li>Timer, votação, frames/apresentações</li>
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
-            
         </div>
     </div>
 
