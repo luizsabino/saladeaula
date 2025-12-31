@@ -1,13 +1,13 @@
 const hoje = new Date();
-  const opcoes = {
+const opcoes = {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric'
-  }; 
+};
 
-  const dataExtenso = hoje.toLocaleDateString('pt-BR', opcoes);
-  document.getElementById('data-hoje').textContent = "Hoje é "+dataExtenso;
+const dataExtenso = hoje.toLocaleDateString('pt-BR', opcoes);
+document.getElementById('data-hoje').textContent = "Hoje é " + dataExtenso;
 
 //  PREVISÃO DO TEMPO
 // ****************************************************************************************
@@ -40,25 +40,25 @@ function formatarData(dataString) {
 // Função para buscar dados da API e criar os cards
 async function carregarPrevisaoTempo() {
     const container = document.getElementById('weather-cards-container');
-    
+
     try {
         // Buscar dados da API BrasilAPI
         const response = await fetch('https://brasilapi.com.br/api/cptec/v1/clima/previsao/3192/3');
-        
+
         if (!response.ok) {
             throw new Error(`Erro na API: ${response.status}`);
         }
-        
+
         const dados = await response.json();
-        
+
         // Limpar o container
         container.innerHTML = '';
-        
+
         // Criar um card para cada dia de previsão
         dados.clima.forEach((dia, index) => {
             const condicao = condicaoMap[dia.condicao] || condicaoMap['nd'];
             const dataFormatada = formatarData(dia.data);
-            
+
             // Criar o HTML do card
             const card = document.createElement('div');
             card.className = 'card';
@@ -86,17 +86,18 @@ async function carregarPrevisaoTempo() {
                                 <p style="margin: 0; font-size: 0.85rem; color: #7f8c8d;">Mínima</p>
                             </div>
                         </div>
-                        <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #7f8c8d;">
-                            <span>☀️ Índice UV: ${dia.indice_uv}</span>
-                        </div>
+                        
                         <!-- A API CPTEC/BrasilAPI não fornece diretamente o volume de chuva (precipitação), mas a condição climática (condicao_desc) já indica chuva. -->
                     </div>
                 </div>
             `;
-            
+            // Índice UV retornando zerado, aguardando correção do CPTEC
+            // <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #7f8c8d;">
+            //     <span>☀️ Índice UV: ${dia.indice_uv}</span>
+            // </div>
             container.appendChild(card);
         });
-        
+
     } catch (erro) {
         console.error('Erro ao carregar previsão do tempo:', erro);
         container.innerHTML = `

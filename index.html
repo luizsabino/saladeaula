@@ -38,7 +38,7 @@
                 <!-- ITENS -->
                 <!-- *********************************************************************** -->
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 text-white">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                         </li>
@@ -72,7 +72,7 @@
         <h2 id="data-hoje" class="text-primary"></h2>
 
         <div class="cards mx-auto">
-            <div class="cardGrande mx-auto">
+            <div class="card-large mx-auto">
                 <div class="card-title text-center">
                     <div class="d-flex align-items-center justify-content-center">
                         <img src="img/responsive.png" alt="" width="32" height="32" class="me-2">
@@ -84,27 +84,44 @@
                     <p class="w-75 text-start">Nesta página, você encontrará alguns recursos úteis para o dia a dia na
                         sala de aula.</p>
                 </div>
-                <div class="card-footer">Luiz Fernando Sabino</div>
+                <div class="card-footer d-flex justify-content-end"><span>Luiz Fernando Sabino</span></div>
             </div>
-            <div class="cardGrande align-items-center">
-                <iframe src="https://relogio.ntp.br/horacerta/glight.php" frameborder="0" scrolling="no" height="247"
-                    width="365" marginheight="0px" allowtransparency="true"></iframe>
+            <div class="card-large align-items-center">
+                <iframe id="relogio" name="relogio" src="https://relogio.ntp.br/horacerta/glight.php" frameborder="0" scrolling="no" height="247"
+                    width="365" marginheight="0px" allowtransparency="true" title="Relógio com a hora certa do Brasil"></iframe>
                 <span>Em caso de erro, atualize a página 🔄️</span>
             </div>
         </div>
+
         <!-- SEÇÃO DE PREVISÃO DO TEMPO - BRASIL API -->
         <h4 class="mt-5 text-primary">Previsão do Tempo para Matão/SP</h4>
-        <div class="cards mx-auto" style="width:80%;" id="weather-cards-container">
+        <div class="cards mx-auto mb-3 justify-content-center"  id="weather-cards-container">
             <!-- Os cards de previsão serão inseridos aqui via JavaScript -->
         </div>
-        <a href="https://www.cptec.inpe.br/sp/matao" target="_blank" class="icone mb-5 mt-3">
-            <span>
-                <h6>Dados do CPTEC/INPE - Clique para ver mais informações</h6>
-            </span>
-        </a>
 
+        <div class="border-secondary-subtle border-top ">
+            <a href="https://www.cptec.inpe.br/sp/matao" target="_blank" rel="noopener noreferrer">
+            <span>Dados do CPTEC/INPE - Clique para ver mais informações</span>
+        </a><br>
+        <a href="https://mto.ifsp.edu.br/estacao-metereologica" target="_blank" rel="noopener noreferrer">
+            <span>Estação metereológica IFSP Campus Matão(SP)</span>
+        </a>
+        </div>
 
     </div>
+
+    <footer class="licenca-cc">
+        <a href="https://luizsabino.github.io/saladeaula/">Recursos para Sala de Aula</a>
+        © 2025 by
+        <a href="https://github.com/luizsabino">Luiz Fernando Sabino de Oliveira</a>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="">
+    </footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

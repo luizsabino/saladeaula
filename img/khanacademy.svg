@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 600 600"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="Khan_Academy_logo_(2018).svg"
+   width="600"
+   height="600"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.25934066"
+     inkscape:cx="455"
+     inkscape:cy="75.190678"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13" />
+  <path
+     d="m 77.55911,150.92584 c -10.89894,5.48605 -15.28778,14.30029 -15.28778,26.33302 v 245.48228 c 0,12.03273 4.38884,19.74977 15.28778,26.33302 l 207.1531,117.98657 a 34.306076,34.306076 0 0 0 30.57557,0 L 522.44089,449.07416 c 10.97209,-6.58325 15.28778,-14.30029 15.28778,-26.33302 V 177.25886 c 0,-14.22715 -6.61983,-21.94418 -15.28778,-26.33302 L 315.28778,32.939271 a 34.306076,34.306076 0 0 0 -30.57557,0 z"
+     fill="#14bf96"
+     id="path1"
+     style="stroke-width:3.65736" />
+  <g
+     fill="#ffffff"
+     id="g2"
+     transform="matrix(3.6573642,0,0,3.6573642,62.271327,30.567048)">
+    <path
+       d="M 114.73,60.05 C 87.85,60.19 66.09,82.76 66.09,110.6 v 1.18 H 64 V 110.6 C 64,82.76 42.2,60.19 15.27,60.05 A 52.06,52.06 0 0 0 15,65.37 c 0,21.77 13.33,40.33 32,47.45 a 51.24,51.24 0 0 0 18,3.23 52,52 0 0 0 18,-3.23 c 18.66,-7.12 32,-25.68 32,-47.45 a 52.06,52.06 0 0 0 -0.27,-5.32 z"
+       id="path2" />
+    <circle
+       cx="65"
+       cy="47.290001"
+       r="16"
+       transform="rotate(-45,64.997057,47.287338)"
+       id="circle2" />
+  </g>
+</svg>

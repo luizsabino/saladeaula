@@ -1,26 +1,57 @@
 :root {
-    --cor-primaria: #4a90e2;
-    --cor-card: #fff;
-    --cor-fundo: #f2f2f2;
+  --cor-primaria: #4a90e2;
+  --cor-card: #fff;
+  --cor-fundo: #f2f2f2;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--cor-fundo);
-    padding-top: 75px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--cor-fundo);
+  padding-top: 75px;
+  min-height: 100vh;
+  /* ocupa toda a altura da janela */
+  display: flex;
+  flex-direction: column;
+  /* empilha header, main, footer em coluna */
+}
+
+.container {
+  flex: 1;
+}
+
+a:hover {
+  font-size: x-large;
 }
 
 /* Cards */
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-top: 3rem;
 }
 
+.cards a {
+  text-decoration: none;
+  /* font-weight: bold; */
+  color: black;
+}
+
+.cards a:visited {
+  color: black;
+}
+
 /* cada card ocupa metade da largura no desktop */
-.cards .card,.cardGrande,.cardsm {
+.cards .card,
+.card-large,.card-xlarge,
+.card-sm, .card-xsm {
   background-color: var(--cor-card);
   border-radius: 8px;
   padding: 0.5rem;
@@ -32,12 +63,20 @@ body {
   overflow: hidden;
 }
 
-.cardGrande{
+.card-large {
   width: 49%;
 }
 
-.cardsm{
+.card-xlarge {
+  width: 67%;
+}
+
+.card-sm {
   width: 24%;
+}
+
+.card-xsm{
+  width: 14%;
 }
 
 .cards .card:hover {
@@ -45,56 +84,59 @@ body {
 }
 
 
-.card-title{
-    justify-content: center;
-    font-weight: bold;
+.card-title {
+  justify-content: center;
+  font-weight: bold;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .card h3 {
-    margin-top: 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 8px solid #EEEEEE;
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 8px solid #EEEEEE;
 }
 
-.card-icon{
-    width: 12rem;
-    height: auto;
+.card-icon {
+  width: 12rem;
+  height: auto;
 }
 
-.card-body, .card-body2{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
+.card-body,
+.card-body2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
-.card-body2{
+.card-body2 {
   flex-wrap: nowrap;
-  
-}
-.card-text{
-    width: auto;
-    font-size: medium;
+
 }
 
-.card-footer{
-    display: flex;
-    border-top: 8px solid #EEEEEE;
-    width: auto;
-    justify-content: right;
+.card-text {
+  width: auto;
+  font-size: medium;
+}
+
+.card-footer {
+  display: flex;
+  border-top: 8px solid #EEEEEE;
+  width: auto;
 }
 
 
 @media (max-width: 768px) {
-  .cards, {
+
+  .cards {
     margin-top: 2rem;
   }
 
-  .cards .card, .cardGrande {
+  .cards .card,
+  .cardGrande {
     width: 100%;
   }
 
@@ -104,7 +146,8 @@ body {
   }
 
   .card-icon {
-    width: 8rem;      /* ícone menor no celular */
+    width: 8rem;
+    /* ícone menor no celular */
   }
 
   .card-text {
@@ -115,7 +158,8 @@ body {
 
 .icone {
   display: flex;
-  flex-direction: column; /* Isso faz a legenda ficar abaixo */
+  flex-direction: column;
+  /* Isso faz a legenda ficar abaixo */
   align-items: center;
   text-align: center;
   margin: 0.1rem;
@@ -130,6 +174,35 @@ body {
 .icone span {
   margin-top: 0.4rem;
   font-size: 0.85rem;
-  color: #036ae0;
+  /* color: #036ae0; */
 
+}
+
+a {
+  text-decoration: none;
+}
+
+.licenca-cc {
+  text-align: center;
+  /* centraliza o texto */
+  font-size: 0.9rem;
+  /* opcional: deixa um pouco menor */
+  margin-top: 1rem;
+  /* espaço acima */
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+}
+
+.licenca-cc img {
+  max-width: 1.5em;
+  max-height: 1.5em;
+  margin-left: .2em;
+  vertical-align: middle;
+  /* alinha os ícones à linha do texto */
+}
+
+.licenca-cc a {
+  text-decoration: none;
+  color: #20c997;
 }

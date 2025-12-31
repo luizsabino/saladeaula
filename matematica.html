@@ -72,13 +72,12 @@
         </div>
         <div class="cards ">
             <!-- CARD 1: Math Apps -->
-            <div class="card">
+            <div class="card-xsm">
                 <div class="card-body">
-                    <a href="https://www.mathlearningcenter.org/apps" target="_blank" class="icone">
-                        <img src="./img/mathapps.svg" alt="figma">
-                        <span>
-                            <h5>Math Apps</h5>
-                        </span>
+                    <a href="https://www.mathlearningcenter.org/apps" target="_blank" class="icone"
+                        rel="noopener noreferrer">
+                        <img src="./img/mathapps.svg" alt="MathApps" class="img-fluid">
+                        <span>Math Apps</span>
                     </a>
                 </div>
                 <div class="footer text-end">
@@ -90,31 +89,11 @@
                 </div>
             </div>
 
-            <!-- CARD 2: Khan Academy -->
-            <div class="card">
+            <!-- CARD 2: Polypad -->
+            <div class="card-xsm">
                 <div class="card-body">
-                    <a href="https://pt.khanacademy.org/" target="_blank" class="icone">
-                        <img src="./img/Khan_Academy_logo_(2018).svg" alt="Canva">
-                        <span>
-                            <h5></h5>
-                        </span>
-                    </a>
-
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalKhanAcademy">
-                        <i class="bi bi-plus-circle "></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 3: Polypad -->
-            <div class="card">
-                <div class="card-body">
-                    <a href="https://polypad.amplify.com/pt/" target="_blank" class="icone">
-                        <img src="./img/polypad.svg" alt="Polypad" style="height: 3rem;">
+                    <a href="https://polypad.amplify.com/pt/" target="_blank" class="icone" rel="noopener noreferrer">
+                        <img src="./img/polypad.svg" alt="Polypad">
                         <span>Polypad</span>
                     </a>
                 </div>
@@ -127,12 +106,30 @@
                 </div>
             </div>
 
-            <!-- CARD 4: Tinkercad -->
-            <div class="card">
+            <!-- CARD 3: Khan Academy -->
+            <div class="card-xsm">
                 <div class="card-body">
-                    <a href="https://www.tinkercad.com/" target="_blank" class="icone">
-                        <img src="./img/tinkercad_ok.svg" alt="Tinkercad" style="height: 4rem;">
-                        <span></span>
+                    <a href="https://pt.khanacademy.org/" target="_blank" class="icone" rel="noopener noreferrer">
+                        <img src="./img/khanacademy.svg" alt="Canva" class="img-fluid">
+                        <span>Khan Academy</span>
+                    </a>
+
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalKhanAcademy">
+                        <i class="bi bi-plus-circle "></i>+
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 4: Tinkercad -->
+            <div class="card-xsm">
+                <div class="card-body">
+                    <a href="https://www.tinkercad.com/" target="_blank" class="icone" rel="noopener noreferrer">
+                        <img src="./img/tinkercad_ok.svg" alt="Tinkercad">
+                        <span>Tinkercad</span>
                     </a>
                 </div>
                 <div class="footer text-end">
@@ -144,14 +141,41 @@
                 </div>
             </div>
 
+            <!-- CARD 5: Geogebra -->
+            <div class="card-xsm">
+                <div class="card-body">
+                    <a href="https://www.geogebra.org/" target="_blank" class="icone" rel="noopener noreferrer">
+                        <img src="./img/geogebra.png" alt="Tinkercad">
+                        <span>Geogebra</span>
+                    </a>
+                </div>
+                <div class="footer text-end">
+                    <!-- Botão para abrir o Modal -->
+                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modalGeogebra">
+                        <i class="bi bi-plus-circle"></i>+
+                    </button>
+                </div>
+            </div>
 
+            <!-- CARD 6: Simuladores -->
+            <div class="card-xsm">
+                <div class="card-body">
+                    <a href="#" target="_blank" class="icone" rel="noopener noreferrer">
+                        <img src="./img/cube.png" alt="Simuladores e Jogos">
+                        <span>Simuladores e jogos</span>
+                    </a>
+                </div>
+
+            </div>
         </div>
     </div>
 
     <!-- MODAIS DO BOOTSTRAP -->
 
     <!-- Modal Math Apps -->
-    <div class="modal modal-lg fade" id="modalMathApps" tabindex="-1" aria-labelledby="modalMathAppsLabel" aria-hidden="true">
+    <div class="modal modal-lg fade" id="modalMathApps" tabindex="-1" aria-labelledby="modalMathAppsLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -175,8 +199,11 @@
                         <li>Pattern Shapes – exploração de formas geométricas e composição de figuras.</li>
                         <li>Whiteboard App – quadro branco digital para desenho, escrita e explicações.</li>
                     </ul>
+
                 </div>
                 <div class="modal-footer">
+                    <p>Para abrir a página, clique no ícone da janela ao fundo. Após isso, clicar em<span
+                            class="text-danger fs-6 fw-bold"> Open web app </span>do respectivo aplicativo.</p>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
@@ -249,7 +276,8 @@
     </div>
 
     <!-- Modal Polypad -->
-    <div class="modal modal-lg fade" id="modalPolypad" tabindex="-1" aria-labelledby="modalPolypadLabel" aria-hidden="true">
+    <div class="modal modal-lg fade" id="modalPolypad" tabindex="-1" aria-labelledby="modalPolypadLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -279,7 +307,8 @@
     </div>
 
     <!-- Modal Tinkercad -->
-    <div class="modal modal-lg fade" id="modalTinkercad" tabindex="-1" aria-labelledby="modalTinkercadLabel" aria-hidden="true">
+    <div class="modal modal-lg fade" id="modalTinkercad" tabindex="-1" aria-labelledby="modalTinkercadLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -313,6 +342,55 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Geogebra -->
+    <div class="modal modal-lg fade" id="modalGeogebra" tabindex="-1" aria-labelledby="modalGeogebraLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGeogebraLabel">Geogebra - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Indicado para os anos finais do Ensino Fundamental</strong></p>
+                    <ul>
+                        <li> <strong>Números e Álgebra</strong><br> - Explorar funções e gráficos (proporcionais,
+                            lineares, quadráticas simples), relacionando expressões algébricas e representações no plano
+                            cartesiano.<br> - Investigar porcentagens, razões e taxas por meio de gráficos e sliders,
+                            apoiando competências de educação financeira (aumento, desconto, juros simples). </li>
+                        <li> <strong>Geometria</strong><br> - Construir e manipular polígonos, circunferências e
+                            sólidos, medindo comprimentos, áreas, ângulos e volumes em situações de problema.<br> -
+                            Trabalhar transformações geométricas (translação, rotação, reflexão, ampliação/redução) no
+                            plano cartesiano, articulando coordenadas e simetrias. </li>
+                        <li> <strong>Grandezas e Medidas</strong><br> - Simular situações de escalas, perímetros, áreas
+                            e volumes, comparando unidades e estimando medidas em contextos próximos do cotidiano.<br> -
+                            Explorar variação de parâmetros (por exemplo, base e altura de um triângulo ou raio de um
+                            círculo) e observar como isso afeta as fórmulas de área e volume. </li>
+                        <li> <strong>Probabilidade e Estatística</strong><br> - Produzir e interpretar gráficos e
+                            tabelas (barras, linhas, setores), relacionando dados numéricos a fenômenos reais.<br> -
+                            Investigar distribuições simples (frequências, médias, máximos/mínimos) usando conjuntos de
+                            dados coletados pelos próprios alunos. </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="licenca-cc">
+        <a href="https://luizsabino.github.io/saladeaula/">Recursos para Sala de Aula</a>
+        © 2025 by
+        <a href="https://github.com/luizsabino">Luiz Fernando Sabino de Oliveira</a>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="">
+    </footer>
 
 
     <!-- Bootstrap JS -->
