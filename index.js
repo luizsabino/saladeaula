@@ -14,17 +14,22 @@ document.getElementById('data-hoje').textContent = "Hoje é " + dataExtenso;
 
 // Mapeamento de condições climáticas para emojis/ícones descritivos
 const condicaoMap = {
-    'pn': { descricao: 'Parcialmente Nublado', emoji: '⛅', cor: '#FDB813' },
+    'ci': { descricao: 'Chuva Isolada', emoji: '🌦️', cor: '#5DADE2' },
     'c': { descricao: 'Chuva', emoji: '🌧️', cor: '#4A90E2' },
-    'n': { descricao: 'Nublado', emoji: '☁️', cor: '#95A5A6' },
-    'pt': { descricao: 'Pouca Chuva', emoji: '🌦️', cor: '#3498DB' },
+    'cn': { descricao: 'Chuva à Noite', emoji: '🌧️', cor: '#2980B9' },
     'cm': { descricao: 'Chuva pela Manhã', emoji: '🌧️', cor: '#2980B9' },
     'ct': { descricao: 'Chuva à Tarde', emoji: '🌧️', cor: '#2980B9' },
-    'pp': { descricao: 'Possibilidade de Chuva', emoji: '🌧️', cor: '#5DADE2' },
-    'pc': { descricao: 'Possibilidade de Chuva', emoji: '🌧️', cor: '#5DADE2' },
+    'cv': { descricao: 'Chuva à Noite', emoji: '🌧️', cor: '#2980B9' },
     'cl': { descricao: 'Céu Claro', emoji: '☀️', cor: '#F39C12' },
     'nv': { descricao: 'Nevoeiro', emoji: '🌫️', cor: '#BDC3C7' },
+    'g': { descricao: 'Geada', emoji: '💧', cor: '#AED6F1' },
     'ne': { descricao: 'Neve', emoji: '❄️', cor: '#ECF0F1' },
+    'n': { descricao: 'Nublado', emoji: '☁️', cor: '#95A5A6' },
+    'pn': { descricao: 'Parcialmente Nublado', emoji: '⛅', cor: '#FDB813' },
+    'pp': { descricao: 'Possibilidade de Chuva', emoji: '🌦️', cor: '#5DADE2' },
+    'pc': { descricao: 'Pancadas de Chuva', emoji: '⛈️', cor: '#5DADE2' },
+    'ps': { descricao: 'Predomínio de Sol', emoji: '☀️', cor: '#F1C40F' },
+    't': { descricao: 'Tempestade', emoji: '⛈️', cor: '#8E44AD' },
     'nd': { descricao: 'Não Definido', emoji: '❓', cor: '#95A5A6' }
 };
 
@@ -63,6 +68,9 @@ async function carregarPrevisaoTempo() {
             const card = document.createElement('div');
             card.className = 'card';
             // card.style.backgroundColor = '#f9f9f9';
+            card.style.backgroundColor = condicao.cor + '20'; // ex: #4A90E220
+            card.style.borderRadius = '12px';
+            card.style.boxShadow = '0 2px 6px rgba(0,0,0,0.08)';
             card.innerHTML = `
                 <div class="card-body">
                     <div style="width: 100%; text-align: center;">
@@ -86,7 +94,7 @@ async function carregarPrevisaoTempo() {
                                 <p style="margin: 0; font-size: 0.85rem; color: #7f8c8d;">Mínima</p>
                             </div>
                         </div>
-                        
+
                         <!-- A API CPTEC/BrasilAPI não fornece diretamente o volume de chuva (precipitação), mas a condição climática (condicao_desc) já indica chuva. -->
                     </div>
                 </div>
