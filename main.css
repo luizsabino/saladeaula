@@ -35,7 +35,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 3rem;
+  margin-top: 2em;
 }
 
 .cards a {
@@ -213,4 +213,14 @@ a {
 .licenca-cc a {
   text-decoration: none;
   color: #20c997;
+}
+
+.buttons-nav{
+  height: 2rem;
+  align-items: end;
+  text-align: end;
+}
+
+.buttons-nav img{
+  height: 100%;
 }
