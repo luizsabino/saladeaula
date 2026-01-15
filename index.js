@@ -7,7 +7,7 @@ const opcoes = {
 };
 
 const dataExtenso = hoje.toLocaleDateString('pt-BR', opcoes);
-document.getElementById('data-hoje').textContent = "Hoje é " + dataExtenso;
+document.getElementById('data-hoje').textContent = "Hoje é " + dataExtenso+".";
 
 //  PREVISÃO DO TEMPO
 // ****************************************************************************************
