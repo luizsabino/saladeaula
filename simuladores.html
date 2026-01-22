@@ -1,764 +1,1076 @@
 <!-- matematica.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recursos para Sala de Aula</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recursos para Sala de Aula</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
-    <!-- CSS do projeto -->
-    <link rel="stylesheet" href="main.css">
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="main.css" />
 </head>
 
 <body class="bg-light">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span>Menu</span>
-            </button>
-            <span class="navbar-brand mx-auto d-flex align-items-center gap-2"> </span>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span>Menu</span>
+      </button>
+      <span class="navbar-brand mx-auto d-flex align-items-center gap-2">
+      </span>
 
-            <div class="buttons-nav">
-                <a href="#" rel="noopener noreferrer">
-                    <img src="./img/undo.png" alt="Voltar" onclick="history.back(); return false;"
-                        aria-label="Voltar para a página anterior">
-                </a>
-                <a href="./index.html" rel="noopener noreferrer" aria-label="Voltar para a página inicial">
-                    <img src="./img/home-button.png" alt="Início">
-                </a>
-            </div>
+      <div class="buttons-nav">
+        <a href="#" rel="noopener noreferrer">
+          <img src="./img/undo.png" alt="Voltar" onclick="
+                history.back();
+                return false;
+              " aria-label="Voltar para a página anterior" />
+        </a>
+        <a href="./index.html" rel="noopener noreferrer" aria-label="Voltar para a página inicial">
+          <img src="./img/home-button.png" alt="Início" />
+        </a>
+      </div>
 
-            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <!-- ITENS -->
-                <!-- *********************************************************************** -->
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quadrobranco.html">Quadro Branco</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ia.html">Inteligência Artificial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pesquisa.html">Pesquisa e Navegação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="matematica.html">Matemática</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="geografia.html">Geografia e Ciências</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ferramentas.html">Ferramentas de Produtividade</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-    </nav>
-
-    <!-- CONTAINER -->
-    <div class="container">
-
-        <div class="text-center">
-            <h3 class="border-bottom border-5 pb-2">Simuladores e Jogos</h3>
+        <!-- ITENS -->
+        <!-- *********************************************************************** -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quadrobranco.html">Quadro Branco</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ia.html">Inteligência Artificial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesquisa.html">Pesquisa e Navegação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matematica.html">Matemática</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="geografia.html">Geografia e Ciências</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ferramentas.html">Ferramentas de Produtividade</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </nav>
 
-        <div class="cards ">
-            <!-- CARD 1: Números pares -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/number-pairs/latest/number-pairs_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/abacus.png" alt="PhET Números Pares" class="img-fluid">
-                        <span>Números Pares</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalNumberPairs">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 2: Média: Distribuição e Equilíbrio -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/measuring-cup.png" alt="Média: Distribuição e Equilíbrio">
-                        <span>Média: Distribuição e Equilíbrio</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalShareAndBalance">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 3: Quadrilateral -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/quadrilateral/latest/quadrilateral_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/square.png" alt="Canva" class="img-fluid">
-                        <span>Quadrilateral</span>
-                    </a>
-
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalQuadrilateral">
-                        <i class="bi bi-plus-circle "></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 4: Comparação de números -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/number-compare/latest/number-compare_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/not-equal.png" alt="Number Compare">
-                        <span>Comparação de Números</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalNumberCompare">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 5: Jogo dos Números -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/number-play/latest/number-play_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/number.png" alt="Jogo dos Números">
-                        <span>Jogo dos Números</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalNumberPlay">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 6: Make Ten -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/ten.png" alt="Simuladores e Jogos">
-                        <span>Some um Dez</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalMakeTen">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 7: Aritmética -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/aritmetica.png" alt="Simuladores e Jogos">
-                        <span>Aritmética</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalAritmetica">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 8: NumberLineInt -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/number-line-integers/latest/number-line-integers_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/temperature.png" alt="NumberLine">
-                        <span>Reta Numérica: Inteiros</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalNumberLineInt">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 9: NumberLine -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/NumerLine.png" alt="NumberLine">
-                        <span>Reta Numérica: Distância</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalNumberLine">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 10: NumberLineOp -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/number-line-operations/latest/number-line-operations_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/numberlineOp.png" alt="NumberLine">
-                        <span>Reta Numérica: Operações</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalNumberLineOp">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 11: Parque da Proporção -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/area-chart.png" alt="NumberLine">
-                        <span>Parque da Proporção</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalProportion">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 12: Probabilidade -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/packing.png" alt="NumberLine">
-                        <span>Probabilidade Plinko</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalProbability">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 13: Frações: Intro -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/half.png" alt="NumberLine">
-                        <span>Frações: Introdução</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalFractions">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-            <!-- CARD 14: Construindo Frações -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/fractions2.png" alt="NumberLine">
-                        <span>Construir uma Fração</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalBuildFractions">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-             <!-- CARD 15: Frações:Igualdade -->
-            <div class="card-xsm">
-                <div class="card-body">
-                    <a href="https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_all.html?locale=pt_BR"
-                        target="_blank" class="icone" rel="noopener noreferrer">
-                        <img src="./img/equal.png" alt="NumberLine">
-                        <span>Frações: Igualdade</span>
-                    </a>
-                </div>
-                <div class="footer text-end">
-                    <!-- Botão para abrir o Modal -->
-                    <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#modalFractionsEq">
-                        <i class="bi bi-plus-circle"></i>+
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="mt-5 text-center border-top">
-            <p class="m-0">Toque em ➕ para Mais informações ou no ícone para redirecionar para o site ou app</p>
-            <p class="m-0">Caso o simulador esteja em Inglês, clique na engrenagem ⚙️, depois em Localization e procure
-                por Português(Brasil).</p>
-        </div>
+  <!-- CONTAINER -->
+  <div class="container">
+    <div class="text-center">
+      <h3 class="border-bottom border-5 pb-2">Simuladores e Jogos</h3>
     </div>
 
-    <!-- MODAIS DO BOOTSTRAP -->
-
-    <!-- Modal Números Pares -->
-    <div class="modal modal-lg fade" id="modalNumberPairs" tabindex="-1" aria-labelledby="modalNumberPairsLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalNumberPairsLabel">Números Pares</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Number Pairs é um simulador interativo que trabalha composição e decomposição de números de 0 a
-                        20 por meio de pares numéricos em contextos visuais variados, como grupos de objetos e cenas
-                        ilustradas. Ele ajuda crianças dos anos iniciais a desenvolver senso numérico, explorando
-                        diferentes maneiras de formar o mesmo total (por exemplo, 10 como 3 + 7, 4 + 6 etc.) de forma
-                        lúdica e investigativa.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+    <div class="cards">
+      <!-- CARD 1: Números pares -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/number-pairs/latest/number-pairs_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/abacus.png" alt="PhET Números Pares" class="img-fluid" />
+            <span>Números Pares</span>
+          </a>
         </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalNumberPairs">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 2: Média: Distribuição e Equilíbrio -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/measuring-cup.png" alt="Média: Distribuição e Equilíbrio" />
+            <span>Média: Distribuição e Equilíbrio</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalShareAndBalance">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 3: Comparação de números -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/number-compare/latest/number-compare_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/not-equal.png" alt="Number Compare" />
+            <span>Comparação de Números</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalNumberCompare">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 4: Jogo dos Números -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/number-play/latest/number-play_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/number.png" alt="Jogo dos Números" />
+            <span>Jogo dos Números</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalNumberPlay">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 5: Make Ten -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/ten.png" alt="Simuladores e Jogos" />
+            <span>Some um Dez</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalMakeTen">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 6: Aritmética -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/aritmetica.png" alt="Simuladores e Jogos" />
+            <span>Aritmética</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalAritmetica">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 7: NumberLineInt -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/number-line-integers/latest/number-line-integers_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/temperature.png" alt="NumberLine" />
+            <span>Reta Numérica: Inteiros</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalNumberLineInt">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 8: NumberLine -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/NumerLine.png" alt="NumberLine" />
+            <span>Reta Numérica: Distância</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalNumberLine">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 9: NumberLineOp -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/number-line-operations/latest/number-line-operations_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/numberlineOp.png" alt="NumberLine" />
+            <span>Reta Numérica: Operações</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalNumberLineOp">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 10: Parque da Proporção -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/area-chart.png" alt="NumberLine" />
+            <span>Parque da Proporção</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalProportion">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 11: Probabilidade -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/packing.png" alt="NumberLine" />
+            <span>Probabilidade Plinko</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalProbability">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 12: Frações: Intro -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/half.png" alt="NumberLine" />
+            <span>Frações: Introdução</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalFractions">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 13: Construindo Frações -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/fractions2.png" alt="NumberLine" />
+            <span>Construir uma Fração</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalBuildFractions">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 14: Frações:Igualdade -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/equal.png" alt="NumberLine" />
+            <span>Frações: Igualdade</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalFractionsEq">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 15: Quadrilateral -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/quadrilateral/latest/quadrilateral_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/square.png" alt="Canva" class="img-fluid" />
+            <span>Quadrilateral</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalQuadrilateral">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 16: Área: Introdução -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/area-model-introduction/latest/area-model-introduction_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/measuring.png" alt="Canva" class="img-fluid" />
+            <span>Área: Introdução</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalArea">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 17: Área: Multiplicação -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/area-model-multiplication/latest/area-model-multiplication_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/area-graph.png" alt="Canva" class="img-fluid" />
+            <span>Área: Multiplicação</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalAreaMult">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 17: Área: Álgebra -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/area-model-algebra/latest/area-model-algebra_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/AreaAlg.png" alt="Canva" class="img-fluid" />
+            <span>Área: Álgebra</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalAreaAlg">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 17: Área: Decimais -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/area-model-decimals/latest/area-model-decimals_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/areaDec.png" alt="Canva" class="img-fluid" />
+            <span>Área: Decimais</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalAreaDec">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Modal Média: Distribuição e Equilíbrio -->
-    <div class="modal modal-lg fade" id="modalShareAndBalance" tabindex="-1" aria-labelledby="modalShareAndBalanceLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalShareAndBalanceLabel">Média: Distribuição e Equilíbrio</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Média: Distribuição e Equilíbrio é um simulador que explora o conceito de média por meio de
-                        situações de nivelamento de quantidades, divisão justa e equilíbrio. Nele, estudantes investigam
-                        como a média pode ser entendida como distribuição equitativa (compartilhar de forma justa) e
-                        como ponto de equilíbrio em uma viga, conectando aritmética e estatística de maneira visual e
-                        intuitiva.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
+    <div class="mt-5 text-center border-top">
+      <p class="m-0">
+        Toque em ➕ para Mais informações ou no ícone para redirecionar para o
+        site ou app
+      </p>
+      <p class="m-0">
+        Caso o simulador esteja em Inglês, clique na engrenagem ⚙️, depois em
+        Localization e procure por Português(Brasil).
+      </p>
     </div>
+  </div>
 
-    <!-- Modal Quadrilateral -->
-    <div class="modal modal-lg fade" id="modalQuadrilateral" tabindex="-1" aria-labelledby="modalQuadrilateralLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalQuadrilateralLabel">Quadrilateral</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Quadrilateral é um simulador que permite explorar propriedades e classificações de quadriláteros
-                        movendo livremente os lados e vértices de uma figura de quatro lados. Os estudantes investigam,
-                        de forma visual e experimental, quando um quadrilátero passa a ser paralelogramo, retângulo,
-                        losango, quadrado e outras categorias, analisando comprimentos de lados, ângulos e paralelismo.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+  <!-- MODAIS DO BOOTSTRAP -->
+
+  <!-- Modal Números Pares -->
+  <div class="modal modal-lg fade" id="modalNumberPairs" tabindex="-1" aria-labelledby="modalNumberPairsLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberPairsLabel">
+            Números Pares
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </div>
-
-    <!-- Modal Comparação de Números -->
-    <div class="modal modal-lg fade" id="modalNumberCompare" tabindex="-1" aria-labelledby="modalNumberCompareLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalNumberCompareLabel">Comparação de Números</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Number Compare é um simulador que permite **comparar números** representados como numerais,
-                        conjuntos de objetos, grupos e quadros de dez. Os estudantes podem usar frases matemáticas,
-                        linhas numéricas e blocos empilhados para decidir qual quantidade é maior, menor ou se são
-                        iguais, fortalecendo o senso numérico inicial e a ideia de cardinalidade.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-body">
+          <p>
+            Number Pairs é um simulador interativo que trabalha composição e
+            decomposição de números de 0 a 20 por meio de pares numéricos em
+            contextos visuais variados, como grupos de objetos e cenas
+            ilustradas. Ele ajuda crianças dos anos iniciais a desenvolver
+            senso numérico, explorando diferentes maneiras de formar o mesmo
+            total (por exemplo, 10 como 3 + 7, 4 + 6 etc.) de forma lúdica e
+            investigativa.
+          </p>
         </div>
-    </div>
-
-    <!-- Modal Jogo dos Números -->
-    <div class="modal modal-lg fade" id="modalNumberPlay" tabindex="-1" aria-labelledby="modalNumberPlayLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalNumberPlayLabel">Jogo dos Números</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Jogo dos Números é um simulador em que crianças brincam com contagem e cardinalidade, explorando
-                        números por meio de diferentes representações, como palavras, numerais, quadros de dez e
-                        conjuntos de objetos. A simulação permite ouvir o número falado em mais de um idioma e comparar
-                        essas representações entre si, fortalecendo o vínculo entre quantidade, símbolo numérico e
-                        leitura oral do número</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Modal Some um Dez -->
-    <div class="modal modal-lg fade" id="modalMakeTen" tabindex="-1" aria-labelledby="modalMakeTenLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalMakeTenLabel">Some um Dez</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Some um Dez é um simulador que trabalha valor posicional no sistema decimal por meio da
-                        estratégia
-                        de “fazer uma dezena” para resolver adições e subtrações. Os estudantes usam blocos de unidades,
-                        dezenas (e, em alguns modos, centenas) para decompor e recombinar números, desenvolvendo cálculo
-                        mental e compreensão de que 10 unidades formam 1 dezena, conectando representações visuais às
-                        operações numéricas.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+  <!-- Modal Média: Distribuição e Equilíbrio -->
+  <div class="modal modal-lg fade" id="modalShareAndBalance" tabindex="-1" aria-labelledby="modalShareAndBalanceLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalShareAndBalanceLabel">
+            Média: Distribuição e Equilíbrio
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </div>
-
-    <!-- Modal Aritmética -->
-    <div class="modal modal-lg fade" id="modalAritmetica" tabindex="-1" aria-labelledby="modalAritmeticaLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalAritmeticaLabel">Aritmética</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A simulação “Aritmética” é um jogo que permite praticar multiplicação, divisão e
-                        fatoração usando modelos de arranjos retangulares, reforçando a tabuada sem uso de calculadora.
-                        Ao construir retângulos com diferentes números de linhas e colunas, o estudante visualiza a
-                        relação entre fatores e produto, desenvolve estratégias variadas para resolver cálculos e
-                        aumenta a precisão em operações básicas de aritmética.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-body">
+          <p>
+            Média: Distribuição e Equilíbrio é um simulador que explora o
+            conceito de média por meio de situações de nivelamento de
+            quantidades, divisão justa e equilíbrio. Nele, estudantes
+            investigam como a média pode ser entendida como distribuição
+            equitativa (compartilhar de forma justa) e como ponto de
+            equilíbrio em uma viga, conectando aritmética e estatística de
+            maneira visual e intuitiva.
+          </p>
         </div>
-    </div>
-
-    <!-- Modal NumberLine -->
-    <div class="modal modal-lg fade" id="modalNumberLine" tabindex="-1" aria-labelledby="modalNumberLineLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalNumberLineLabel">Reta Numérica: Distância</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>O simulador “Reta Numérica: Distância” permite explorar a distância entre dois pontos em
-                        uma reta numérica, trabalhando a ideia de módulo da diferença entre números inteiros. Na
-                        atividade, o estudante desloca uma pessoa e uma casa pela reta, observa as posições marcadas e
-                        vê a distância calculada automaticamente, independentemente da direção (esquerda/direita).</p>
-                    <p>Esse recurso é indicado para introduzir ou reforçar conteúdos de reta numérica, inteiros e
-                        subtração, ajudando a diferenciar “posição” (com sinal) de “distância” (sempre positiva) por
-                        meio de experimentação visual e interativa.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Modal NumberLineInt -->
-    <div class="modal modal-lg fade" id="modalNumberLineInt" tabindex="-1" aria-labelledby="modalNumberLineIntLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalNumberLineIntLabel">Reta Numérica: Inteiros</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A simulação “Reta Numérica: Inteiros” apresenta situações reais com temperatura, saldo
-                        bancário e altitude para explorar números inteiros positivos e negativos na reta numérica,
-                        destacando que estar mais à direita significa ser maior, mesmo entre negativos. O recurso ajuda
-                        o estudante a compreender o valor absoluto como a distância de um número até o zero e a
-                        interpretar esse módulo em contextos como dívidas, frio/calor e posições acima ou abaixo do
-                        nível do mar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+  <!-- Modal Quadrilateral -->
+  <div class="modal modal-lg fade" id="modalQuadrilateral" tabindex="-1" aria-labelledby="modalQuadrilateralLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalQuadrilateralLabel">
+            Quadrilateral
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </div>
-
-    <!-- Modal NumberOp -->
-    <div class="modal modal-lg fade" id="modalNumberLineOp" tabindex="-1" aria-labelledby="modalNumberLineOpLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalNumberLineOpLabel">Reta Numérica: Operações</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A simulação “Reta Numérica: Operações” permite explorar adição e subtração de números
-                        inteiros em um contexto de patrimônio líquido (bens e dívidas) e depois generalizar essas
-                        operações na reta numérica. O estudante experimenta somar e subtrair inteiros positivos e
-                        negativos, faz previsões sobre se o resultado será positivo ou negativo e visualiza essas
-                        operações como deslocamentos ao longo da reta, fortalecendo a compreensão de inverso aditivo e
-                        da ideia de “ganhos” e “perdas” em situações do dia a dia.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-body">
+          <p>
+            Quadrilateral é um simulador que permite explorar propriedades e
+            classificações de quadriláteros movendo livremente os lados e
+            vértices de uma figura de quatro lados. Os estudantes investigam,
+            de forma visual e experimental, quando um quadrilátero passa a ser
+            paralelogramo, retângulo, losango, quadrado e outras categorias,
+            analisando comprimentos de lados, ângulos e paralelismo.
+          </p>
         </div>
-    </div>
-
-    <!-- Modal Proportion -->
-    <div class="modal modal-lg fade" id="modalProportion" tabindex="-1" aria-labelledby="modalProportionLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalProportionLabel">Parque da Proporção</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A simulação “Parque da Proporção” permite explorar razões e proporções em contextos
-                        lúdicos, como montar colares, estourar balões de tinta, jogar sinuca ou comprar maçãs,
-                        trabalhando também a ideia de taxa unitária. Nesses cenários, o estudante cria e compara
-                        diferentes razões, faz previsões sobre quais combinações são proporcionais antes de o resultado
-                        ser revelado e usa raciocínio multiplicativo para encontrar valores faltantes em proporções,
-                        fortalecendo a compreensão de razão, proporção e taxa por meio de experimentação visual.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Modal Probabilidade -->
-    <div class="modal modal-lg fade" id="modalProbability" tabindex="-1" aria-labelledby="modalProbabilityLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalProbabilityLabel">Probabilidade Plinko</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Plinko é um jogo de azar popularizado em programas de TV estadunidenses, em que fichas ou bolas
-                        caem de cima em um tabuleiro cheio de pinos, desviando-se aleatoriamente até parar em
-                        compartimentos na parte de baixo, cada um com um prêmio ou pontuação.
-                    </p>
-                    <p>A simulação “Probabilidade Plinko” representa um tabuleiro de pinos onde bolas caem
-                        aleatoriamente e se acumulam em recipientes, permitindo observar como a distribuição se aproxima
-                        de um histograma em forma de “curva normal” à medida que muitas bolas são lançadas. O estudante
-                        pode ajustar a probabilidade binária, realizar várias rodadas com dezenas de bolas e comparar a
-                        frequência observada em cada recipiente com a probabilidade teórica, desenvolvendo intuições
-                        sobre probabilidade, variabilidade, estatística experimental e interpretação de histogramas.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+  <!-- Modal Comparação de Números -->
+  <div class="modal modal-lg fade" id="modalNumberCompare" tabindex="-1" aria-labelledby="modalNumberCompareLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberCompareLabel">
+            Comparação de Números
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </div>
-
-    <!-- Modal Frações: Intro -->
-    <div class="modal modal-lg fade" id="modalFractions" tabindex="-1" aria-labelledby="modalFractionsLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalFractionsLabel">Frações: Introdução</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A simulação “Frações: Intro” apresenta frações em contextos visuais como pedaços de bolo,
-                        copos de suco e representações em círculos, retângulos e reta numérica, permitindo ao estudante
-                        criar suas próprias frações e relacionar figura, número e posição na reta. O recurso ajuda a
-                        compreender como numerador e denominador afetam o valor da fração, a construir frações
-                        equivalentes e a comparar frações por meio de jogos em que é preciso combinar figuras e números
-                        para ganhar estrelas.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-body">
+          <p>
+            Number Compare é um simulador que permite **comparar números**
+            representados como numerais, conjuntos de objetos, grupos e
+            quadros de dez. Os estudantes podem usar frases matemáticas,
+            linhas numéricas e blocos empilhados para decidir qual quantidade
+            é maior, menor ou se são iguais, fortalecendo o senso numérico
+            inicial e a ideia de cardinalidade.
+          </p>
         </div>
-    </div>
-
-    <!-- Modal Construindo Frações -->
-    <div class="modal modal-lg fade" id="modalBuildFractions" tabindex="-1" aria-labelledby="modalBuildFractionsLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalBuildFractionsLabel">Construir Frações</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A simulação “Construir uma Fração” é um jogo em que o estudante monta frações a partir de
-                        figuras e números para ganhar estrelas, podendo depois explorar mais livremente no “Laboratório
-                        de Frações”. O recurso permite construir frações equivalentes com diferentes representações,
-                        comparar frações por meio de padrões visuais e reconhecer frações simplificadas e não
-                        simplificadas, incluindo números mistos. </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Modal Frações Igualdade -->
-    <div class="modal modal-lg fade" id="modalFractionsEq" tabindex="-1" aria-labelledby="modalFractionsEqLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalFractionsEqLabel">Frações: Igualdade</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A simulação “Frações: Igualdade” propõe desafios em forma de jogo nos quais o estudante
-                        constrói frações equivalentes com denominadores diferentes e precisa combinar figuras e números
-                        para ganhar estrelas. Ela também permite comparar frações na reta numérica, incluindo frações
-                        impróprias, reforçando a ideia de que frações equivalentes ocupam o mesmo ponto na reta, mesmo
-                        com numeradores e denominadores distintos.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
+  <!-- Modal Jogo dos Números -->
+  <div class="modal modal-lg fade" id="modalNumberPlay" tabindex="-1" aria-labelledby="modalNumberPlayLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberPlayLabel">
+            Jogo dos Números
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <p>
+            Jogo dos Números é um simulador em que crianças brincam com
+            contagem e cardinalidade, explorando números por meio de
+            diferentes representações, como palavras, numerais, quadros de dez
+            e conjuntos de objetos. A simulação permite ouvir o número falado
+            em mais de um idioma e comparar essas representações entre si,
+            fortalecendo o vínculo entre quantidade, símbolo numérico e
+            leitura oral do número
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <footer class="licenca-cc">
-        <a href="https://luizsabino.github.io/saladeaula/">Recursos para Sala de Aula</a>
-        © 2025 by
-        <a href="https://github.com/luizsabino">Luiz Fernando Sabino de Oliveira</a>
-        is licensed under
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
-        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="">
-    </footer>
+  <!-- Modal Some um Dez -->
+  <div class="modal modal-lg fade" id="modalMakeTen" tabindex="-1" aria-labelledby="modalMakeTenLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMakeTenLabel">Some um Dez</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Some um Dez é um simulador que trabalha valor posicional no
+            sistema decimal por meio da estratégia de “fazer uma dezena” para
+            resolver adições e subtrações. Os estudantes usam blocos de
+            unidades, dezenas (e, em alguns modos, centenas) para decompor e
+            recombinar números, desenvolvendo cálculo mental e compreensão de
+            que 10 unidades formam 1 dezena, conectando representações visuais
+            às operações numéricas.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal Aritmética -->
+  <div class="modal modal-lg fade" id="modalAritmetica" tabindex="-1" aria-labelledby="modalAritmeticaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAritmeticaLabel">Aritmética</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A simulação “Aritmética” é um jogo que permite praticar
+            multiplicação, divisão e fatoração usando modelos de arranjos
+            retangulares, reforçando a tabuada sem uso de calculadora. Ao
+            construir retângulos com diferentes números de linhas e colunas, o
+            estudante visualiza a relação entre fatores e produto, desenvolve
+            estratégias variadas para resolver cálculos e aumenta a precisão
+            em operações básicas de aritmética.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-    <script>
-        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-    </script>
-    <script src="https://cdn.logwork.com/widget/text.js"></script>
-    <script src="index.js"></script>
+  <!-- Modal NumberLine -->
+  <div class="modal modal-lg fade" id="modalNumberLine" tabindex="-1" aria-labelledby="modalNumberLineLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberLineLabel">
+            Reta Numérica: Distância
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            O simulador “Reta Numérica: Distância” permite explorar a
+            distância entre dois pontos em uma reta numérica, trabalhando a
+            ideia de módulo da diferença entre números inteiros. Na atividade,
+            o estudante desloca uma pessoa e uma casa pela reta, observa as
+            posições marcadas e vê a distância calculada automaticamente,
+            independentemente da direção (esquerda/direita).
+          </p>
+          <p>
+            Esse recurso é indicado para introduzir ou reforçar conteúdos de
+            reta numérica, inteiros e subtração, ajudando a diferenciar
+            “posição” (com sinal) de “distância” (sempre positiva) por meio de
+            experimentação visual e interativa.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal NumberLineInt -->
+  <div class="modal modal-lg fade" id="modalNumberLineInt" tabindex="-1" aria-labelledby="modalNumberLineIntLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberLineIntLabel">
+            Reta Numérica: Inteiros
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A simulação “Reta Numérica: Inteiros” apresenta situações reais
+            com temperatura, saldo bancário e altitude para explorar números
+            inteiros positivos e negativos na reta numérica, destacando que
+            estar mais à direita significa ser maior, mesmo entre negativos. O
+            recurso ajuda o estudante a compreender o valor absoluto como a
+            distância de um número até o zero e a interpretar esse módulo em
+            contextos como dívidas, frio/calor e posições acima ou abaixo do
+            nível do mar.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal NumberOp -->
+  <div class="modal modal-lg fade" id="modalNumberLineOp" tabindex="-1" aria-labelledby="modalNumberLineOpLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberLineOpLabel">
+            Reta Numérica: Operações
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A simulação “Reta Numérica: Operações” permite explorar adição e
+            subtração de números inteiros em um contexto de patrimônio líquido
+            (bens e dívidas) e depois generalizar essas operações na reta
+            numérica. O estudante experimenta somar e subtrair inteiros
+            positivos e negativos, faz previsões sobre se o resultado será
+            positivo ou negativo e visualiza essas operações como
+            deslocamentos ao longo da reta, fortalecendo a compreensão de
+            inverso aditivo e da ideia de “ganhos” e “perdas” em situações do
+            dia a dia.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proportion -->
+  <div class="modal modal-lg fade" id="modalProportion" tabindex="-1" aria-labelledby="modalProportionLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProportionLabel">
+            Parque da Proporção
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A simulação “Parque da Proporção” permite explorar razões e
+            proporções em contextos lúdicos, como montar colares, estourar
+            balões de tinta, jogar sinuca ou comprar maçãs, trabalhando também
+            a ideia de taxa unitária. Nesses cenários, o estudante cria e
+            compara diferentes razões, faz previsões sobre quais combinações
+            são proporcionais antes de o resultado ser revelado e usa
+            raciocínio multiplicativo para encontrar valores faltantes em
+            proporções, fortalecendo a compreensão de razão, proporção e taxa
+            por meio de experimentação visual.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Probabilidade -->
+  <div class="modal modal-lg fade" id="modalProbability" tabindex="-1" aria-labelledby="modalProbabilityLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProbabilityLabel">
+            Probabilidade Plinko
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Plinko é um jogo de azar popularizado em programas de TV
+            estadunidenses, em que fichas ou bolas caem de cima em um
+            tabuleiro cheio de pinos, desviando-se aleatoriamente até parar em
+            compartimentos na parte de baixo, cada um com um prêmio ou
+            pontuação.
+          </p>
+          <p>
+            A simulação “Probabilidade Plinko” representa um tabuleiro de
+            pinos onde bolas caem aleatoriamente e se acumulam em recipientes,
+            permitindo observar como a distribuição se aproxima de um
+            histograma em forma de “curva normal” à medida que muitas bolas
+            são lançadas. O estudante pode ajustar a probabilidade binária,
+            realizar várias rodadas com dezenas de bolas e comparar a
+            frequência observada em cada recipiente com a probabilidade
+            teórica, desenvolvendo intuições sobre probabilidade,
+            variabilidade, estatística experimental e interpretação de
+            histogramas.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Frações: Intro -->
+  <div class="modal modal-lg fade" id="modalFractions" tabindex="-1" aria-labelledby="modalFractionsLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFractionsLabel">
+            Frações: Introdução
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A simulação “Frações: Intro” apresenta frações em contextos
+            visuais como pedaços de bolo, copos de suco e representações em
+            círculos, retângulos e reta numérica, permitindo ao estudante
+            criar suas próprias frações e relacionar figura, número e posição
+            na reta. O recurso ajuda a compreender como numerador e
+            denominador afetam o valor da fração, a construir frações
+            equivalentes e a comparar frações por meio de jogos em que é
+            preciso combinar figuras e números para ganhar estrelas.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Construindo Frações -->
+  <div class="modal modal-lg fade" id="modalBuildFractions" tabindex="-1" aria-labelledby="modalBuildFractionsLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBuildFractionsLabel">
+            Construir Frações
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A simulação “Construir uma Fração” é um jogo em que o estudante
+            monta frações a partir de figuras e números para ganhar estrelas,
+            podendo depois explorar mais livremente no “Laboratório de
+            Frações”. O recurso permite construir frações equivalentes com
+            diferentes representações, comparar frações por meio de padrões
+            visuais e reconhecer frações simplificadas e não simplificadas,
+            incluindo números mistos.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Frações Igualdade -->
+  <div class="modal modal-lg fade" id="modalFractionsEq" tabindex="-1" aria-labelledby="modalFractionsEqLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFractionsEqLabel">
+            Frações: Igualdade
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A simulação “Frações: Igualdade” propõe desafios em forma de jogo
+            nos quais o estudante constrói frações equivalentes com
+            denominadores diferentes e precisa combinar figuras e números para
+            ganhar estrelas. Ela também permite comparar frações na reta
+            numérica, incluindo frações impróprias, reforçando a ideia de que
+            frações equivalentes ocupam o mesmo ponto na reta, mesmo com
+            numeradores e denominadores distintos.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Área -->
+  <div class="modal modal-lg fade" id="modalArea" tabindex="-1" aria-labelledby="modalAreaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAreaLabel">Área: Introdução</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Área: Introdução é uma simulação interativa que conecta
+            multiplicação à área visualmente, permitindo aos alunos construir
+            retângulos de vários tamanhos e particioná-los para descobrir
+            fatores, produtos e a propriedade distributiva.
+          </p>
+
+          <p>
+            Seus objetivos educacionais centrais incluem explorar esses
+            conceitos por meio de modelos de área, promovendo compreensão
+            conceitual de multiplicação, partição e raciocínio
+            geométrico-algébrico básico, alinhando-se perfeitamente à BNCC
+            para os anos iniciais do ensino fundamental.
+          </p>
+          <p>
+            A ferramenta oferece modos de exploração livre — para construir
+            figuras e observar áreas — e desafios progressivos em formato de
+            jogo, integrando área e perímetro
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Área: Multiplicação -->
+  <div class="modal modal-lg fade" id="modalAreaMult" tabindex="-1" aria-labelledby="modalAreaMultLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAreaMultLabel">Área: Multiplicação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Área: Multiplicação (PhET) é uma simulação interativa que aprofunda a relação entre multiplicação
+            e área, permitindo construir retângulos maiores para explorar produtos parciais, fatores e estratégias para
+            multiplicar números grandes. </p>
+          <p>Seus objetivos educacionais focam em visualizar decomposições multiplicativas e
+            partições retangulares, promovendo compreensão avançada de multiplicação via modelo de área, alinhada à BNCC
+            para anos iniciais do fundamental e desenvolvimento de raciocínio algébrico. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Área: Álgebra -->
+  <div class="modal modal-lg fade" id="modalAreaAlg" tabindex="-1" aria-labelledby="modalAreaAlgLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAreaAlgLabel">Área: Álgebra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Área: Álgebra é uma simulação interativa que aplica o modelo de área à álgebra, permitindo
+            construir retângulos para multiplicar expressões algébricas, visualizar polinômios, fatores e produtos
+            parciais. </p>
+          <p>Seus objetivos educacionais centram-se em estratégias para multiplicar binomios e polinômios,
+            reforçando a propriedade distributiva e raciocínio algébrico-geométrico, alinhada à BNCC para anos finais do
+            fundamental e início do médio.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Área: Decimais -->
+  <div class="modal modal-lg fade" id="modalAreaDec" tabindex="-1" aria-labelledby="modalAreaDecLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAreaDecLabel">Área: Decimais</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Área: Decimais (PhET) é uma simulação interativa gratuita que estende o modelo de área à multiplicação de
+            números decimais, permitindo construir retângulos com dimensões fracionárias para visualizar produtos
+            parciais e estratégias de cálculo. </p>
+          <p>Seus objetivos educacionais priorizam a compreensão visual da
+            multiplicação decimal, partição de áreas e relação entre fatores e produtos, alinhando-se à BNCC para anos
+            iniciais do fundamental ao promover raciocínio geométrico e numérico avançado com decimais.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="licenca-cc">
+    <a href="https://luizsabino.github.io/saladeaula/">Recursos para Sala de Aula</a>
+    © 2025 by
+    <a href="https://github.com/luizsabino">Luiz Fernando Sabino de Oliveira</a>
+    is licensed under
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" />
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" />
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" />
+    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" />
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script>
+    !(function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://weatherwidget.io/js/widget.min.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    })(document, "script", "weatherwidget-io-js");
+  </script>
+  <script src="https://cdn.logwork.com/widget/text.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
