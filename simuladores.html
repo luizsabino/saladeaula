@@ -80,7 +80,7 @@
   <!-- CONTAINER -->
   <div class="container">
     <div class="text-center">
-      <h3 class="border-bottom border-5 pb-2">Simuladores e Jogos</h3>
+      <h3 class="border-bottom border-5 pb-2">Simuladores</h3>
     </div>
 
     <div class="cards">
@@ -323,7 +323,7 @@
         <div class="card-body">
           <a href="https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_all.html?locale=pt_BR"
             target="_blank" class="icone" rel="noopener noreferrer">
-            <img src="./img/equal.png" alt="NumberLine" />
+            <img src="./img/balance.png" alt="NumberLine" />
             <span>Frações: Igualdade</span>
           </a>
         </div>
@@ -426,9 +426,44 @@
         </div>
       </div>
 
+      <!-- CARD 18: Explorador de Igualdade: Básico -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/equality-explorer-basics/latest/equality-explorer-basics_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/equal.png" alt="Canva" class="img-fluid" />
+            <span>Igualdade: Básico</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalEqualBasic">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 19: Explorador de Igualdade -->
+      <div class="card-xsm">
+        <div class="card-body">
+          <a href="https://phet.colorado.edu/sims/html/equality-explorer/latest/equality-explorer_all.html?locale=pt_BR"
+            target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/balance_2.png" alt="Canva" class="img-fluid" />
+            <span>Igualdade: Básico</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalEqual">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
     </div>
 
-    <div class="mt-5 text-center border-top">
+    <div class="mt-3 mb-3 text-center border-top border-bottom">
       <p class="m-0">
         Toque em ➕ para Mais informações ou no ícone para redirecionar para o
         site ou app
@@ -437,10 +472,14 @@
         Caso o simulador esteja em Inglês, clique na engrenagem ⚙️, depois em
         Localization e procure por Português(Brasil).
       </p>
+      <p class="m-0 fw-bold">Explore mais Simulações diretamente no site do <a
+          href="https://phet.colorado.edu/pt_BR/simulations/filter?type=html" target="_blank"
+          rel="noopener noreferrer">PhET</a> da Universidade de Colarado(EUA)</p>
     </div>
+    
   </div>
 
-  <!-- MODAIS DO BOOTSTRAP -->
+  <!-- MODAIS DO BOOTSTRAP *************************************************************************************-->
 
   <!-- Modal Números Pares -->
   <div class="modal modal-lg fade" id="modalNumberPairs" tabindex="-1" aria-labelledby="modalNumberPairsLabel"
@@ -1028,6 +1067,65 @@
           <p>Seus objetivos educacionais priorizam a compreensão visual da
             multiplicação decimal, partição de áreas e relação entre fatores e produtos, alinhando-se à BNCC para anos
             iniciais do fundamental ao promover raciocínio geométrico e numérico avançado com decimais.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Explorador de Igualdade: Básico -->
+  <div class="modal modal-lg fade" id="modalEqualBasic" tabindex="-1" aria-labelledby="modalEqualBasicLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEqualBasicLabel">Explorador de Igualdade: Básico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O Explorador da Igualdade: Básico é uma simulação em que os alunos usam uma balança para investigar
+            quando uma afirmação matemática fica equilibrada ou desequilibrada, arrastando objetos (como gatos,
+            cachorros, frutas ou blocos numéricos) para cada lado. O recurso desenvolve a ideia de igualdade como
+            equivalência entre dois lados, não apenas como “resultado da conta”, incentivando a justificar estratégias
+            para encontrar valores desconhecidos e a usar raciocínio proporcional para determinar o valor de um único
+            objeto.</p>
+          <p>Do ponto de vista da BNCC, favorece o pensamento algébrico desde os anos iniciais ao explorar propriedades
+            de igualdade e princípios de equivalência, articulando habilidades como interpretar e completar sentenças de
+            igualdade, comparar expressões e relacionar representações pictóricas e numéricas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Explorador de Igualdade -->
+  <div class="modal modal-lg fade" id="modalEqual" tabindex="-1" aria-labelledby="modalEqualLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEqualLabel">Explorador de Igualdade</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O Explorador da Igualdade (PhET) é uma simulação que usa o modelo de balança para resolver equações e
+            desigualdades, permitindo adicionar, remover, multiplicar ou dividir objetos e números em ambos os lados até
+            encontrar valores que mantêm a igualdade ou identificam soluções de uma desigualdade. Os alunos podem
+            trabalhar com animais, moedas, números e a variável x, registrando equações e acompanhando passo a passo as
+            transformações feitas na balança como operações inversas.</p>
+
+          <p>Do ponto de vista pedagógico, o foco é desenvolver pensamento algébrico: compreender igualdade como
+            equivalência, usar operações inversas para isolar a incógnita, testar se um valor é solução e interpretar
+            soluções de desigualdades na reta numérica. A simulação é adequada especialmente para anos finais do ensino
+            fundamental e início do médio, em atividades de resolução de equações de 1º grau e introdução a
+            desigualdades, alinhando-se à BNCC no eixo de álgebra e pensamento algébrico.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">

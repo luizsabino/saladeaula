@@ -1,0 +1,415 @@
+<!-- matematica.html -->
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recursos para Sala de Aula</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="bg-light">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span>Menu</span>
+      </button>
+      <span class="navbar-brand mx-auto d-flex align-items-center gap-2">
+      </span>
+
+      <div class="buttons-nav">
+        <a href="#" rel="noopener noreferrer">
+          <img src="./img/undo.png" alt="Voltar" onclick="
+                history.back();
+                return false;
+              " aria-label="Voltar para a página anterior" />
+        </a>
+        <a href="./index.html" rel="noopener noreferrer" aria-label="Voltar para a página inicial">
+          <img src="./img/home-button.png" alt="Início" />
+        </a>
+      </div>
+
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <!-- ITENS -->
+        <!-- *********************************************************************** -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quadrobranco.html">Quadro Branco</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ia.html">Inteligência Artificial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesquisa.html">Pesquisa e Navegação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matematica.html">Matemática</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="geografia.html">Geografia e Ciências</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ferramentas.html">Ferramentas de Produtividade</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <div class="text-center">
+      <h3 class="border-bottom border-5 pb-2">Jogos</h3>
+    </div>
+
+    <div class="cards">
+      <!-- CARD 01: Ilha das Operações Somartius -->
+      <div class="card-sm">
+        <div class="card-body">
+          <a href="https://luizsabino.gitlab.io/iopsomartius" target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/IlhaDasOperações.png" alt="Ilha das Operações" class="img-fluid" id="imgLarge" />
+            <span>Somartius e Subtrartius</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalSomartius">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 02: Ilha das Operações Multiplus-->
+      <div class="card-sm">
+        <div class="card-body">
+          <a href="https://luizsabino.gitlab.io/iopmultiplis" target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/IlhaDasOperações.png" alt="Ilha das Operações" class="img-fluid" id="imgLarge" />
+            <span>Múltiplis e Divisarions</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalMultiplis">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 03: Ilha das Operações Quantum-->
+      <div class="card-sm">
+        <div class="card-body">
+          <a href="https://luizsabino.gitlab.io/iopquantum" target="_blank" class="icone" rel="noopener noreferrer">
+            <img src="./img/IlhaDasOperações.png" alt="Ilha das Operações" class="img-fluid" id="imgLarge" />
+            <span>Quantum Comparare</span>
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalQuantum">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 04: Mestre dos Sucos:questão de gosto -->
+      <div class="card-sm">
+        <div class="card-body">
+          <a href="https://luizsabino.gitlab.io/mestredossucos1" target="_blank" class="icone"
+            rel="noopener noreferrer">
+            <img src="./img/mestredossucos1.png" alt="Mestre dos Sucos" class="img-fluid" id="imgLarge" />
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalmestredossucos1">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 05: Mestre dos Sucos:mix de frações -->
+      <div class="card-sm">
+        <div class="card-body">
+          <a href="https://luizsabino.gitlab.io/mestredossucos2" target="_blank" class="icone"
+            rel="noopener noreferrer">
+            <img src="./img/mestredossucos2.png" alt="Mestre dos Sucos" class="img-fluid" id="imgLarge" />
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalmestredossucos2">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 06: Mestre dos Sucos: A razão é do cliente -->
+      <div class="card-sm">
+        <div class="card-body">
+          <a href="https://luizsabino.gitlab.io/mestredossucos3" target="_blank" class="icone"
+            rel="noopener noreferrer">
+            <img src="./img/mestredossucos3.png" alt="Mestre dos Sucos" class="img-fluid" id="imgLarge" />
+          </a>
+        </div>
+        <div class="footer text-end">
+          <!-- Botão para abrir o Modal -->
+          <button type="button" class="btn btn-sm btn-primary mt-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalmestredossucos3">
+            <i class="bi bi-plus-circle"></i>+
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAIS DO BOOTSTRAP *************************************************************************************-->
+
+  <!-- Modal Ilha das Operações Somartius -->
+  <div class="modal modal-lg fade" id="modalSomartius" tabindex="-1" aria-labelledby="modalSomartiusLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEqualLabel">Ilha das Operações - em busca das pedras Somartius e Subtrartius
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Embarque na "Ilha das Operações" em uma missão para encontrar as pedras mágicas Somartius e Subtratius!
+            Este jogo educativo transforma a matemática em uma aventura, desafiando os jogadores a resolverem problemas
+            práticos de ganho, perda, comparação e combinação. Mais do que fazer contas, você aprenderá o verdadeiro
+            significado por trás da adição e da subtração ao salvar a ilha. Ideal para estudantes darem os primeiros
+            passos no universo dos números de forma lúdica, criativa e significativa.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Ilha das Operações Multiplis -->
+  <div class="modal modal-lg fade" id="modalMultiplis" tabindex="-1" aria-labelledby="modalMultiplisLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMultiplisLabel">Ilha das Operações - em busca das pedras Múltiplis e
+            Divisarions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O jogo Ilha das Operações – em busca das pedras Múltiplis e Divisarions é um recurso digital que trabalha
+            multiplicação e divisão em situações de proporcionalidade. Ele apresenta desafios em diferentes
+            representações visuais e narrativas, estimulando o raciocínio dos alunos sem depender de algoritmos prontos,
+            como a regra de três.
+
+            Com uma proposta lúdica, o jogo transforma conceitos matemáticos em aventuras, incentivando a autonomia e a
+            criatividade dos estudantes. Assim, além de aprender conteúdos da BNCC, eles desenvolvem estratégias
+            próprias para resolver problemas em contextos variados.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Ilha das Operações Quantum -->
+  <div class="modal modal-lg fade" id="modalQuantum" tabindex="-1" aria-labelledby="modalQuantumLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalQuantumLabel">Ilha das Operações - Quantum Comparare</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O jogo Ilha das Operações: Quantum Comparare tem como foco situações de
+            comparação entre quantidades. Ele explora tanto relações aditivas (mais/menos) quanto multiplicativas (vezes
+            mais/vezes menos), apresentando desafios em diferentes representações — pictóricas, numéricas e em retas
+            numeradas. A proposta é que os alunos compreendam o significado das operações de adição, subtração,
+            multiplicação e divisão a partir de problemas contextualizados, sem depender de algoritmos prontos, mas sim
+            construindo estratégias próprias.</p>
+
+
+          <p>Com uma narrativa lúdica, o jogo aproxima a matemática do cotidiano, mostrando como comparar valores e
+            proporções é parte da vida real. Ao enfrentar os desafios, os estudantes desenvolvem raciocínio lógico,
+            autonomia e criatividade, alinhando-se às orientações da BNCC e à Teoria dos Campos Conceituais. Assim,
+            Quantum Comparare transforma a prática matemática em uma aventura envolvente, que conecta conceitos
+            abstratos ao mundo concreto.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Mestre dos sucos: questão de gosto -->
+  <div class="modal modal-lg fade" id="modalmestredossucos1" tabindex="-1" aria-labelledby="modalmestredossucos1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalmestredossucos1Label">Mestre dos Sucos: Questão de gosto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O jogo Mestre dos Sucos: Questão de Gosto coloca os alunos em um festival de verão na cidade de Cozilândia,
+            onde precisam atender clientes no quiosque do famoso Derick Lacan. A cada pedido, os jogadores escolhem
+            frações de frutas para preparar sucos mais fortes ou suaves, explorando conceitos de fração, medida e
+            proporção em situações práticas. O sistema de feedback visual — verde para acertos e vermelho para erros —
+            ajuda os estudantes a validar suas escolhas, enquanto moedas e carinhas de satisfação ou insatisfação tornam
+            a experiência envolvente e motivadora.</p>
+
+          <p>Desenvolvido para o 5º ano do Ensino Fundamental, o recurso trabalha habilidades da BNCC ligadas à
+            representação, comparação e ordenação de números racionais, além da equivalência entre frações. Os desafios
+            evoluem de frações com denominadores iguais para diferentes, aumentando a complexidade conforme o progresso
+            do jogador. Ao final, a tela de resultados permite avaliar o desempenho, tornando o jogo não apenas uma
+            aventura divertida, mas também uma ferramenta pedagógica eficaz para consolidar conhecimentos matemáticos
+            essenciais .</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Mestre dos sucos: mix de frutas -->
+  <div class="modal modal-lg fade" id="modalmestredossucos2" tabindex="-1" aria-labelledby="modalmestredossucos2Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalmestredossucos2Label">Mestre dos Sucos: Mix de Frutas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O jogo Mestre dos Sucos: Mix de Frutas acontece durante o festival de verão em Cozilândia, onde os alunos
+            atendem clientes no quiosque do Derick Lacan preparando sucos personalizados. A cada pedido, o jogador
+            precisa interpretar frações de polpa e água, calcular as quantidades corretas e montar a bebida de acordo
+            com o tamanho do copo. O jogo oferece dois níveis: no primeiro, as frações têm denominadores iguais; no
+            segundo, denominadores diferentes, exigindo que o aluno encontre denominadores comuns. Os desafios evoluem
+            de fáceis para médios e difíceis, aumentando gradualmente a complexidade e estimulando o raciocínio
+            proporcional.</p>
+
+          <p>Além de trabalhar conteúdos como frações equivalentes, comparação e medida, o jogo promove habilidades
+            previstas na BNCC para o 5º ano, como a representação e ordenação de números racionais. O sistema de
+            feedback imediato — com carinhas felizes ou tristes e instruções sobre os erros — ajuda os estudantes a
+            refletirem sobre suas escolhas e corrigirem estratégias. Ao final, a tela de resultados mostra moedas
+            arrecadadas e o nível de satisfação dos clientes, permitindo que professores avaliem o desempenho. Dessa
+            forma, Mix de Frutas combina narrativa lúdica com prática pedagógica, tornando o aprendizado de frações mais
+            envolvente e significativo</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Mestre dos sucos: mix de frustas -->
+  <div class="modal modal-lg fade" id="modalmestredossucos3" tabindex="-1" aria-labelledby="modalmestredossucos3Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalmestredossucos3Label">Mestre dos Sucos: A razão é do cliente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O jogo se passa no festival de verão de Cozilândia, onde os alunos atendem clientes no quiosque do Derick
+            Lacan preparando sucos personalizados. Cada pedido exige combinar polpa e água em proporções específicas,
+            utilizando copos de 360 mL ou 600 mL. O jogador precisa interpretar razões como 3:7 ou 1:2 e ajustar as
+            quantidades corretamente, clicando para adicionar partes de 60 mL de cada ingrediente. Os desafios evoluem
+            de fáceis para difíceis, estimulando a compreensão de razão e proporção em situações práticas e visuais.</p>
+
+          <p>Além de trabalhar conteúdos matemáticos previstos para o 5º ano, como o significado de razão e proporção, o
+            jogo promove habilidades de cálculo, validação de resultados e resolução de problemas. O sistema de
+            recompensas com moedas e carinhas felizes ou tristes fornece feedback imediato, enquanto a tela final
+            permite avaliar o desempenho dos estudantes. Dessa forma, A Razão é do Cliente alia narrativa lúdica e
+            prática pedagógica, tornando o aprendizado de conceitos matemáticos mais envolvente e significativo</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="licenca-cc">
+    <a href="https://luizsabino.github.io/saladeaula/">Recursos para Sala de Aula</a>
+    © 2025 by
+    <a href="https://github.com/luizsabino">Luiz Fernando Sabino de Oliveira</a>
+    is licensed under
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" />
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" />
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" />
+    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" />
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <script>
+    !(function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://weatherwidget.io/js/widget.min.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    })(document, "script", "weatherwidget-io-js");
+  </script>
+  <script src="https://cdn.logwork.com/widget/text.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
